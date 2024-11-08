@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    width: 100%;
+    height: 200px;
+    margin: 0 auto;
+    background-color: #591F12;
+    padding: 24px;
+}
+
+nav {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, #FEDB37 0%, #FED336 24%, #FDC834 55%, #FDB931 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+nav::before,
+nav::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 10px;
+    height: 100%;
+    background-image: radial-gradient(circle, #591F12 5px, transparent 5px);
+    background-repeat: repeat-y;
+    background-size: 10px 13px;
+}
+
+nav::before {
+    left: -5px;
+}
+
+nav::after {
+    right: -5px;
+}
+
+/* Seção de Pesquisa */
+.search-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    overflow: visible;
+    width: 100%;
+}
+
+/* Caixa de pesquisa */
+.search-box {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.search-box input {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.search-box button {
+    padding: 8px;
+    background-color: #591F12;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Nome da loja */
+.store-name {
+    display: flex;
+    justify-content: center;
+    gap: 2px;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 48px;
+    color: #591F12;
+    transform: translateY(-40px);
+}
+
+.word {
+    display: flex;
+    gap: 2px;
+}
+
+/* Ajustes de posição vertical para criar o arco */
+.store-name .word span:nth-child(1) { transform: translateY(57.3px); } /* C */
+.store-name .word span:nth-child(2) { transform: translateY(53.31px); } /* H */
+.store-name .word span:nth-child(3) { transform: translateY(49.5px); } /* A */
+.store-name .word span:nth-child(4) { transform: translateY(46.31px); } /* R */
+.store-name .word span:nth-child(5) { transform: translateY(43.59px); } /* L */
+.store-name .word span:nth-child(6) { transform: translateY(41.61px); } /* I */
+.store-name .word span:nth-child(7) { transform: translateY(40.42px); margin-right: 16px; } /* E */
+
+/* Resto do arco */
+.store-name .word:nth-child(2) span:nth-child(1) { transform: translateY(38.32px); } /* L */
+.store-name .word:nth-child(2) span:nth-child(2) { transform: translateY(37.51px); } /* O */
+.store-name .word:nth-child(2) span:nth-child(3) { transform: translateY(37.07px); } /* J */
+.store-name .word:nth-child(2) span:nth-child(4) { transform: translateY(37px); margin-right: 16px; } /* A */
+
+.store-name .word:nth-child(3) span:nth-child(1) { transform: translateY(37.71px); } /* D */
+.store-name .word:nth-child(3) span:nth-child(2) { transform: translateY(38.78px); margin-right: 16px; } /* E */
+
+.store-name .word:nth-child(4) span:nth-child(1) { transform: translateY(41.13px); } /* D */
+.store-name .word:nth-child(4) span:nth-child(2) { transform: translateY(43.34px); } /* O */
+.store-name .word:nth-child(4) span:nth-child(3) { transform: translateY(45px); } /* C */
+.store-name .word:nth-child(4) span:nth-child(4) { transform: translateY(47px); } /* E */
+.store-name .word:nth-child(4) span:nth-child(5) { transform: translateY(49px); } /* S */
+
+/* Seção de Logo */
+.logo-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.line {
+    display: block;
+    width: 430px;
+    height: 5px;
+    background-color: #591F12;
+}
